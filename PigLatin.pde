@@ -1,6 +1,9 @@
 public void setup() 
 {
 	String[] lines = loadStrings("words.txt");
+  String[] lowell = loadStrings("LowellHymn.txt");
+  for (int i = 0 ; i < lowell.length; i++)
+  System.out.println(pigLatin(lowell[i]));
 	System.out.println("there are " + lines.length + " lines");
 	for (int i = 0 ; i < lines.length; i++) 
 	{
